@@ -8,7 +8,7 @@ function TutorNavbar(){
     return (
       <Container fluid>
         <Navbar bg="light" expand="lg" className="shadow-sm">
-          <Navbar.Brand as={Link} to="/" className="fw-bold" style={{ fontSize: '1.5rem', color: 'black' }}>
+          <Navbar.Brand as={Link} to="/" className="fw-bold" style={{ fontSize: '1.5rem', color: 'black' }}> 
             <span >BoostYourMark</span>
              <span style={{ color: 'var(--accent-orange)', fontSize: '2rem', marginLeft: '2px' }}>!</span>
           </Navbar.Brand>

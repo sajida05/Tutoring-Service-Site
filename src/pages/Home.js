@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import { Col, Card, Row, Image} from 'react-bootstrap';
+import { Col, Row, Image} from 'react-bootstrap';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import '../App.css';
 
