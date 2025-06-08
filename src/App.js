@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TutorNavbar from './components/TutorNavbar';
+import Home from './pages/Home';
+import Tutors from './pages/Tutors';
+import Bookings from './pages/Bookings';
+import Contact from './pages/Contact';
+import TutorProfile from './pages/TutorProfile';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FooterName from './components/FooterName'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <TutorNavbar /> 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tutors" element={<Tutors />} />
+        <Route path="/bookings" element={<Bookings />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/tutor/:name" element={<TutorProfile />} />
+
+      </Routes>
+      <FooterName />
+    </Router>
+
+
+
   );
 }
 
