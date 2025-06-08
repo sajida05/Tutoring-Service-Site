@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TutorNavbar from './components/TutorNavbar';
 import Home from './pages/Home';
@@ -11,7 +10,7 @@ import FooterName from './components/FooterName'
 
 function App() {
   return (
-    <Router>
+  <> 
       <TutorNavbar /> 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +21,7 @@ function App() {
 
       </Routes>
       <FooterName />
-    </Router>
+ </>
 
 
 
